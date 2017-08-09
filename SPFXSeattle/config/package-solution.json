@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "spfx-seattle-client-side-solution",
+    "id": "76c392bc-0b4b-4e5c-aaa9-3589f1e0a13c",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-seattle.sppkg"
+  }
+}

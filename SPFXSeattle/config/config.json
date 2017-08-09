@@ -1,0 +1,43 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/helloSeattle/HelloSeattleWebPart.js",
+      "manifest": "./src/webparts/helloSeattle/HelloSeattleWebPart.manifest.json",
+      "outputPath": "./dist/hello-seattle.bundle.js"
+    },
+    {
+      "entry": "./lib/extensions/appCustomizer/AppCustomizerApplicationCustomizer.js",
+      "manifest": "./src/extensions/appCustomizer/AppCustomizerApplicationCustomizer.manifest.json",
+      "outputPath": "./dist/app-customizer.bundle.js"
+    },
+    {
+      "entry": "./lib/extensions/fieldCustomizer/FieldCustomizerFieldCustomizer.js",
+      "manifest": "./src/extensions/fieldCustomizer/FieldCustomizerFieldCustomizer.manifest.json",
+      "outputPath": "./dist/field-customizer.bundle.js"
+    },
+    {
+      "entry": "./lib/extensions/commandSet/CommandSetCommandSet.js",
+      "manifest": "./src/extensions/commandSet/CommandSetCommandSet.manifest.json",
+      "outputPath": "./dist/command-set.bundle.js"
+    },
+    {
+      "entry": "./lib/extensions/plain/PlainFieldCustomizer.js",
+      "manifest": "./src/extensions/plain/PlainFieldCustomizer.manifest.json",
+      "outputPath": "./dist/plain.bundle.js"
+    },
+    {
+      "entry": "./lib/extensions/helloCommand/HelloCommandCommandSet.js",
+      "manifest": "./src/extensions/helloCommand/HelloCommandCommandSet.manifest.json",
+      "outputPath": "./dist/hello-command.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "helloSeattleStrings": "webparts/helloSeattle/loc/{locale}.js",
+    "appCustomizerStrings": "extensions/appCustomizer/loc/{locale}.js",
+    "fieldCustomizerStrings": "extensions/fieldCustomizer/loc/{locale}.js",
+    "commandSetStrings": "extensions/commandSet/loc/{locale}.js",
+    "plainStrings": "extensions/plain/loc/{locale}.js",
+    "helloCommandStrings": "extensions/helloCommand/loc/{locale}.js"
+  }
+}
