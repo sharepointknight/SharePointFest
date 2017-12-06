@@ -1,43 +1,45 @@
 {
-  "entries": [
-    {
-      "entry": "./lib/webparts/helloSeattle/HelloSeattleWebPart.js",
-      "manifest": "./src/webparts/helloSeattle/HelloSeattleWebPart.manifest.json",
-      "outputPath": "./dist/hello-seattle.bundle.js"
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "myapp-customizer-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/myappCustomizer/MyappCustomizerApplicationCustomizer.js",
+          "manifest": "./src/extensions/myappCustomizer/MyappCustomizerApplicationCustomizer.manifest.json"
+        }
+      ]
     },
-    {
-      "entry": "./lib/extensions/appCustomizer/AppCustomizerApplicationCustomizer.js",
-      "manifest": "./src/extensions/appCustomizer/AppCustomizerApplicationCustomizer.manifest.json",
-      "outputPath": "./dist/app-customizer.bundle.js"
+    "my-field-cusomizer-field-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/myFieldCusomizer/MyFieldCusomizerFieldCustomizer.js",
+          "manifest": "./src/extensions/myFieldCusomizer/MyFieldCusomizerFieldCustomizer.manifest.json"
+        }
+      ]
     },
-    {
-      "entry": "./lib/extensions/fieldCustomizer/FieldCustomizerFieldCustomizer.js",
-      "manifest": "./src/extensions/fieldCustomizer/FieldCustomizerFieldCustomizer.manifest.json",
-      "outputPath": "./dist/field-customizer.bundle.js"
+    "my-custom-command-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/myCustomCommand/MyCustomCommandCommandSet.js",
+          "manifest": "./src/extensions/myCustomCommand/MyCustomCommandCommandSet.manifest.json"
+        }
+      ]
     },
-    {
-      "entry": "./lib/extensions/commandSet/CommandSetCommandSet.js",
-      "manifest": "./src/extensions/commandSet/CommandSetCommandSet.manifest.json",
-      "outputPath": "./dist/command-set.bundle.js"
-    },
-    {
-      "entry": "./lib/extensions/plain/PlainFieldCustomizer.js",
-      "manifest": "./src/extensions/plain/PlainFieldCustomizer.manifest.json",
-      "outputPath": "./dist/plain.bundle.js"
-    },
-    {
-      "entry": "./lib/extensions/helloCommand/HelloCommandCommandSet.js",
-      "manifest": "./src/extensions/helloCommand/HelloCommandCommandSet.manifest.json",
-      "outputPath": "./dist/hello-command.bundle.js"
+    "sp-fx-demo-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spFxDemo/SpFxDemoWebPart.js",
+          "manifest": "./src/webparts/spFxDemo/SpFxDemoWebPart.manifest.json"
+        }
+      ]
     }
-  ],
+  },
   "externals": {},
   "localizedResources": {
-    "helloSeattleStrings": "webparts/helloSeattle/loc/{locale}.js",
-    "appCustomizerStrings": "extensions/appCustomizer/loc/{locale}.js",
-    "fieldCustomizerStrings": "extensions/fieldCustomizer/loc/{locale}.js",
-    "commandSetStrings": "extensions/commandSet/loc/{locale}.js",
-    "plainStrings": "extensions/plain/loc/{locale}.js",
-    "helloCommandStrings": "extensions/helloCommand/loc/{locale}.js"
+    "MyappCustomizerApplicationCustomizerStrings": "lib/extensions/myappCustomizer/loc/{locale}.js",
+    "MyFieldCusomizerFieldCustomizerStrings": "lib/extensions/myFieldCusomizer/loc/{locale}.js",
+    "MyCustomCommandCommandSetStrings": "lib/extensions/myCustomCommand/loc/{locale}.js",
+    "SpFxDemoWebPartStrings": "lib/webparts/spFxDemo/loc/{locale}.js"
   }
 }

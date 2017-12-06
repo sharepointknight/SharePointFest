@@ -15,7 +15,7 @@
       "fileMatch": [
         "/config/config.json"
       ],
-      "url": "./node_modules/@microsoft/sp-build-web/lib/schemas/config.schema.json"
+      "url": "./node_modules/@microsoft/sp-build-core-tasks/lib/configJson/schemas/config-v1.schema.json"
     },
     {
       "fileMatch": [

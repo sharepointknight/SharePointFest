@@ -1,8 +1,10 @@
 {
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "spfx-seattle-client-side-solution",
-    "id": "76c392bc-0b4b-4e5c-aaa9-3589f1e0a13c",
-    "version": "1.0.0.0"
+    "id": "7c6ecc10-ffa0-4b99-a9d3-1bbbdaf094e3",
+    "version": "1.0.0.0",
+    "skipFeatureDeployment": true
   },
   "paths": {
     "zippedPackage": "solution/spfx-seattle.sppkg"
