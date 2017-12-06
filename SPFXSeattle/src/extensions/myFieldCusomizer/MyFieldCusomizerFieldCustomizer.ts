@@ -39,7 +39,7 @@ export default class MyFieldCusomizerFieldCustomizer
   @override
   public onRenderCell(event: IFieldCustomizerCellEventParameters): void {
     // Use this method to perform your custom cell rendering.
-    const text: string = `${this.properties.sampleText}: ${event.fieldValue}`;
+    const text: string = `${event.fieldValue}`;
 
     const myFieldCusomizer: React.ReactElement<{}> =
       React.createElement(MyFieldCusomizer, { text } as IMyFieldCusomizerProps);

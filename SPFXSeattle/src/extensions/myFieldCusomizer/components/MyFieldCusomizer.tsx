@@ -25,7 +25,7 @@ export default class MyFieldCusomizer extends React.Component<IMyFieldCusomizerP
   public render(): React.ReactElement<{}> {
     return (
       <div className={styles.cell}>
-        { this.props.text }
+        P{ this.props.text }%
       </div>
     );
   }

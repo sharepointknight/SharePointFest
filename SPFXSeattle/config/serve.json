@@ -4,18 +4,18 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://sharepointknight.sharepoint.com/sites/Playground",
       "customActions": {
         "fd96406b-5020-4a9e-9720-f6c903508a71": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "testMessage": "Test message"
+            "Bottom":"Bottom area in the page"
           }
         }
       }
     },
     "myappCustomizer": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://sharepointknight.sharepoint.com/sites/Playground",
       "customActions": {
         "fd96406b-5020-4a9e-9720-f6c903508a71": {
           "location": "ClientSideExtension.ApplicationCustomizer",
@@ -26,7 +26,7 @@
       }
     },
     "myFieldCusomizer": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://sharepointknight.sharepoint.com/sites/Playground",
       "fieldCustomizers": {
         "InternalFieldName": {
           "id": "0fd791d6-27cb-44b5-ae63-e01505284175",
@@ -37,7 +37,7 @@
       }
     },
     "myCustomCommand": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://sharepointknight.sharepoint.com/sites/Playground",
       "customActions": {
         "267f7a5b-75dc-4041-abd8-e123563046ff": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
